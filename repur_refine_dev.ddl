@@ -1,0 +1,18 @@
+CREATE OR REPLACE table json-372108.repur_refine_dev.refine_dev(
+CID INT64 options (description ="CUSTOMER_ID"), 
+UPC NUMERIC options(description= "USER_PER_COUNT"),  
+OID NUMERIC options(description= "ORDER ID"), 
+DT DATE options(description= "ITEM PURCHASE DATE"), 
+R_DT DATE options(description= "ITEM RECEIVED DATE"), 
+PRC FLOAT64 options(description= "PRICE OF THE ITEM"), 
+QTY INT64 options(description= "QUNTITY"),  
+AMT FLOAT64 options(description= "AMOUNT PAID BY CUSTOMER"),
+R_QTY INT64 options(description= "RECEIVED QUANTITY"),
+R_AMT FLOAT64 options(description= "RECEIVED AMOUNT"),
+WEB_PROD_ID INT64 options(description= "WEB PRODUCT ID"), 
+GMM_DESC STRING options(description= "GENERAL DISCRIPTION OF ITEM"),
+PARENT_MDSE_DIVN_DESC STRING options(description= "ITEM TYPE"),
+LAST_MODIFIES_TIME TIMESTAMP options(description= "LAST UPDATED TIMESTAMP"),
+COUNTRY_CODE STRING options(description= "COUNTRY CODE"),
+ENTITY_CODE string options(description= "ENTITY CODE"),
+)
